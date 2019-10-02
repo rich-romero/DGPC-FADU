@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+    <title>UBA | FADU | DG / DIyS | DGPC | Cátedra Díaz Cortez | Rita Rodríguez Álvarez, Juan Marcelo Díaz Cortez, Damián de Luque | Ricardo, Antonela, Jaqueline | INTI | 1º cuat. 2018
+    Webapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+   <script type="text/javascript">
+    function openVentana(){
+        $(".ventana").slideDown("slow");
+    }
+   function closeVentana(){
+        $(".ventana").slideUp("fast");
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="principal.html">
+            <img src="img/logo-01.svg">
+            </a>
+        </div>
+        <div id="menuusuario">
+            <div id="usuario">
+                <img src="img/fotousuario-01.png" alt="fotousuario" id="fotousuario">
+                <a href="usuario.html#">
+                <p id="nombreusuario">Mariano Brown</p>
+                </a>
+            </div>
+        </div>
+    </header>
+        <div class="ventana">
+            <div class="forma">
+                <div class="cerrar"><a href="javascript: closeVentana();"><h5>X</h5></a>
+                </div>
+            <h6>Enviar Archivo</h6>
+            <hr>
+        <form>
+        <table>
+            <tr>
+                <td>Correo Electronico</td>
+                <td><input type="text" placeholder="ingresa tu Email"> </td>
+            </tr>
+            <tr>
+                <td>Comentarios</td>
+                <td><input type="text" placeholder="ingresa tus comentarios"></td>
+            </tr>
+            </table>
+            </form>
+                <div class="enviar"> <input type="submit" value="Enviar">
+                    </div>
+        </div>
+        </div> 
+        <main id="cuerpo">
+            <video id="mivideo" autoplay="autoplay" loop="loop" preload="auto" volume="50"><source src="img/lines.mp4"></video>
+            <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'Historial')" style='width:50%'>Historial</button>
+                  <button class="tablinks" onclick="openCity(event, 'Mis Impresoras')" style='width:50%'>Mis impresoras</button>
+            </div>
+            <div id="Historial" class="tabcontent">
+                  <div class="historialtexto">
+                    <ul class="fecha">
+                         <li>2/07/18 13:30</li>
+                         <li>14/03/18 20:30</li>
+                         <li>20/12/17 10:50</li>
+                    </ul>
+                    <ul class="objeto">
+                         <li>Ojotas- Solidez Baja</li>
+                         <li>Mate- Solidez: Alta</li>
+                         <li>Lego- Solidez: Media</li>
+                    </ul>
+                       <ul class="enviarr">
+                          <li>
+                              <a href="javascript: openVentana();"><img src="img/enviar.svg"></a>
+                          </li>
+                          <li>
+                              <a href="javascript: openVentana();"><img src="img/enviar.svg"></a>
+                          </li>
+                          <li>
+                              <a href="javascript: openVentana();"><img src="img/enviar.svg"></a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="Mis Impresoras" class="tabcontent">
+                <div class="config">
+                 <ul>
+                     <li>PRINT BOT (PLA)</li>
+                     <li>WITBOX 2 (MADERA)</li>
+                     <li>PRUSA I3(FILAFLEX))</li>
+                     <li>X LINE 2000R (METALES)</li>
+                 </ul>
+            </div>
+            </div>
+
+            <div class="botones">
+            <div class="nuevo">
+                <div class="nuevo2">
+                    <a href="app.html">
+                <img src="img/nuevo.svg">
+            <h1>Imprimir Nuevo</h1> 
+                 </a>
+                 </div>
+                </div>
+                      <div class="ayuda">
+                          <div class="ayuda2">
+                              <a href="http://www.inti.gob.ar/prodiseno/pdf/i3d_publicacion.pdf">
+                     <img src="img/ayuda.svg">
+                    <h1>Material INTI</h1>
+                              </a>
+                </div>
+                </div>
+                </div>
+                 </main>
+    <footer>
+         <nav>
+            <p>Los contenidos publicados en estas páginas son en el marco de un trabajo práctico realizado por alumnos de una materia de la Universidad de Buenos Aires. Los textos, logotipos, fotografías, tipografías, etc., pueden no ser de su autoría y sólo son utilizados a los fines prácticos del ejercicio.</p>
+                   </nav>    
+    </footer>
+    <script src="js/main.js" type="text/javascript"></script>
+ 
+</body>
+</html>
